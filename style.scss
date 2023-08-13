@@ -263,6 +263,7 @@ a {
 .frame {
     padding-top: 100px;
     z-index: 11;
+    position: relative;
     .frame__wrapper {
         position: relative;
         border: 2px solid red;
@@ -423,7 +424,6 @@ a {
 }
 
 .tv {
-
     position: relative;
     padding-top: 122px;
     padding-bottom: 120px;
@@ -431,6 +431,7 @@ a {
         position: absolute;
         left: 0;
         top: -400px;
+        z-index: -2;
         @media screen and (max-width:768px) {
             top: 100px;
         }
@@ -444,7 +445,7 @@ a {
         left: 0;
         top: 50%;
         transform: translateY(-50%);
-        
+        z-index: -1;
         img {
             max-width: 500px;
             width: 100%;

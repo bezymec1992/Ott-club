@@ -1,13 +1,9 @@
 AOS.init();
+AOS.init({once:true, offset: 0});
 
-if(window.innerWidth <768) {
-    AOS.init({once:true, offset: 0});
-} else {
-    AOS.init({once:true, offset: 120});
-}
-
-const cards = document.querySelectorAll(".tv__img");
-const see = document.querySelector(".see");
+const cards = document.querySelectorAll(".tv__img"),
+    see = document.querySelector(".see"),
+    accardions = document.querySelectorAll(".accardion");
 
 see.addEventListener('click', () => {
     see.classList.toggle('open');
@@ -16,17 +12,10 @@ see.addEventListener('click', () => {
     }
 })
 
-
-const accardions = document.querySelectorAll(".accardion");
-
 for(item of accardions) {
     item.addEventListener("click", function () {
         this.classList.toggle("active");
         let panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-        } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-        }
+        panel.style.maxHeight ? panel.style.maxHeight = null : panel.style.maxHeight = panel.scrollHeight + "px";
     })
 }
