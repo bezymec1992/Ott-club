@@ -422,9 +422,32 @@ a {
   position: relative;
   padding-top: 122px;
   padding-bottom: 120px;
-  overflow: hidden;
-  background: url("img/tv-bg.png") no-repeat left center/cover;
-  background-size: 55%;
+}
+.tv .tv-gradient {
+  position: absolute;
+  left: 0;
+  top: -400px;
+}
+@media screen and (max-width: 768px) {
+  .tv .tv-gradient {
+    top: 100px;
+  }
+}
+.tv .tv-gradient img {
+  width: 100%;
+  height: auto;
+}
+.tv .tv-spider {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.tv .tv-spider img {
+  width: 100%;
+  height: auto;
+  z-index: -1;
 }
 @media screen and (max-width: 768px) {
   .tv .tv__wrapper {
@@ -468,6 +491,7 @@ a {
   overflow: auto;
   overflow-x: hidden;
   gap: 22px;
+  position: relative;
 }
 .tv .tv__wrapper .tv__btn {
   background: transparent;
