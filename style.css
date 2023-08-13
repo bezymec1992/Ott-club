@@ -495,6 +495,13 @@ a {
   overflow: auto;
   gap: 22px;
   position: relative;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+.tv .tv__wrapper .tv__btns::-webkit-scrollbar {
+  display: none;
 }
 .tv .tv__wrapper .tv__btn {
   background: transparent;
@@ -907,16 +914,19 @@ footer .footer__right h3 {
   font-size: 20px;
   margin-bottom: 20px;
 }
-footer .footer__right .footer__phones a, footer .footer__right .footer__phones li {
+footer .footer__right .footer__phones a,
+footer .footer__right .footer__phones li {
   margin-bottom: 10px;
   cursor: pointer;
   -webkit-transition: ease 0.5s;
   transition: ease 0.5s;
 }
-footer .footer__right .footer__phones a:last-child, footer .footer__right .footer__phones li:last-child {
+footer .footer__right .footer__phones a:last-child,
+footer .footer__right .footer__phones li:last-child {
   margin-bottom: 32px;
 }
-footer .footer__right .footer__phones a:hover, footer .footer__right .footer__phones li:hover {
+footer .footer__right .footer__phones a:hover,
+footer .footer__right .footer__phones li:hover {
   color: red;
 }
 @media screen and (max-width: 768px) {
