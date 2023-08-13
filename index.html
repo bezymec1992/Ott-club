@@ -98,23 +98,28 @@
                         <p class="text-center">Покупая подписку <br /> более, чем на 6 месяцев</p>
                     </div>
                     <div class="frame__items">
-                        <div class="frame__item d-flex align-items-center" data-aos="fade-zoom-in" data-aos-duration="500">
+                        <div class="frame__item d-flex align-items-center" data-aos="fade-zoom-in"
+                            data-aos-duration="500">
                             <img src="img/frame-item.svg" alt="done-icon">
                             <p class="frame__txt">Более 270 каналов</p>
                         </div>
-                        <div class="frame__item d-flex align-items-center" data-aos="fade-zoom-in" data-aos-duration="1000">
+                        <div class="frame__item d-flex align-items-center" data-aos="fade-zoom-in"
+                            data-aos-duration="1000">
                             <img src="img/frame-item.svg" alt="done-icon">
                             <p class="frame__txt">127 FullHD каналов</p>
                         </div>
-                        <div class="frame__item d-flex align-items-center" data-aos="fade-zoom-in" data-aos-duration="1500">
+                        <div class="frame__item d-flex align-items-center" data-aos="fade-zoom-in"
+                            data-aos-duration="1500">
                             <img src="img/frame-item.svg" alt="done-icon">
                             <p class="frame__txt">Режим Ultra TV Sport</p>
                         </div>
-                        <div class="frame__item d-flex align-items-center" data-aos="fade-zoom-in" data-aos-duration="2000">
+                        <div class="frame__item d-flex align-items-center" data-aos="fade-zoom-in"
+                            data-aos-duration="2000">
                             <img src="img/frame-item.svg" alt="done-icon">
                             <p class="frame__txt">Архив каналов</p>
                         </div>
-                        <div class="frame__item d-flex align-items-center" data-aos="fade-zoom-in" data-aos-duration="2500">
+                        <div class="frame__item d-flex align-items-center" data-aos="fade-zoom-in"
+                            data-aos-duration="2500">
                             <img src="img/frame-item.svg" alt="done-icon">
                             <p class="frame__txt">5 устройств</p>
                         </div>
@@ -135,11 +140,11 @@
 
     <section class="tv" data-aos="fade-up" data-aos-duration="1000">
         <span class="tv-gradient">
-            <img src="img/tv-bg.png" alt="">
-            
+            <img class="d-none d-md-block" src="img/tv-bg.png" alt="v-gradient">
+            <img class="d-md-none" src="img/gradient-tv.png" alt="v-gradient">
         </span>
         <span class="tv-spider">
-            <img class="spider" src="img/spider.png" alt="">
+            <img class="spider" src="img/spider.png" alt="spider">
         </span>
         <div class="container">
             <div class="tv__wrapper">
@@ -170,7 +175,8 @@
                     <img class="tv__img d-none d-md-block hiden" src="img/TV card (8).svg" alt="tv-card">
                     <img class="tv__img d-none d-md-block hiden" src="img/TV card (9).svg" alt="tv-card">
                 </div>
-                <div class="see d-flex align-items-center justify-content-end" data-aos="fade-up" data-aos-duration="1500">
+                <div class="see d-flex align-items-center justify-content-end" data-aos="fade-up"
+                    data-aos-duration="1500">
                     <span>Показать все</span>
                     <img src="img/arrow.svg" alt="arrow">
                 </div>
@@ -307,12 +313,16 @@
     </section>
 
     <footer>
-        <img class="gradient-footer" src="img/gradient-footer.png" alt="" data-aos="fade-zoom-in"
-            data-aos-duration="2000">
+        <picture class="gradient-footer" data-aos="fade-zoom-in" data-aos-duration="200">
+            <source media="(min-width:768px)" srcset="img/gradient-footer.png">
+            <source media="(min-width:320px)" srcset="img/BG-m.png">
+            <img src="img/gradient-footer.png" alt="gradient-footer" style="width:100%;">
+        </picture>
+
         <picture class="footer__tree" data-aos="fade-zoom-in" data-aos-duration="500">
             <source media="(min-width:768px)" srcset="img/footer-bg.png">
             <source media="(min-width:320px)" srcset="img/footer__tree.png">
-            <img src="img_orange_flowers.jpg" alt="device-icon" style="width:100%;">
+            <img src="img/BG-m.png" alt="footer__tree" style="width:100%;">
         </picture>
         <div class="container">
             <div class="footer__wrapper d-md-flex justify-content-between">
@@ -363,7 +373,8 @@
                 <img class="me-2 me-md-4" src="img/footer-2.svg" alt="footer-logo">
                 <img class="me-2 me-md-4" src="img/footer-1.svg" alt="footer-logo">
             </div>
-            <p class="footer__company" data-aos="fade-down" data-aos-duration="1500">@ 2021-2022 COMPANY NAME Company number 1221514</p>
+            <p class="footer__company" data-aos="fade-down" data-aos-duration="1500">@ 2021-2022 COMPANY NAME Company
+                number 1221514</p>
         </div>
     </footer>
 

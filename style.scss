@@ -431,12 +431,13 @@ a {
 
     .tv-gradient {
         position: absolute;
-        left: 0;
+        right: 0;
         top: -400px;
         z-index: -2;
-
+        width: 100%;
         @media screen and (max-width:768px) {
-            top: 100px;
+            top: unset;
+            bottom: -150px;
         }
 
         img {
@@ -448,10 +449,14 @@ a {
     .tv-spider {
         position: absolute;
         left: 0;
-        top: 50%;
-        transform: translateY(-50%);
+        bottom: -100px;
         z-index: -1;
-
+        @media screen and (max-width:768px) {
+            max-width: 250px;
+            width: 100%;
+            bottom: -50px;
+            
+        }
         img {
             max-width: 500px;
             width: 100%;
@@ -542,7 +547,6 @@ a {
         }
 
         .tv__cards {
-            // flex-wrap: wrap;
             margin-top: 52px;
             gap: 70px;
             display: grid;
@@ -575,33 +579,6 @@ a {
                 border: 1px solid rgba(0, 0, 0, 0.8);
 
             }
-        }
-    }
-
-    .swiper {
-        width: 1445px;
-        height: 40px;
-
-        .swiper-slide {
-            border: 2px solid white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            width: auto;
-            width: fit-content !important;
-            font-size: 20px;
-            padding: 16px 22px;
-            border-radius: 5px;
-            transition: ease 0.5s;
-            cursor: pointer;
-
-            &:hover {
-                color: red;
-                border: 2px solid red;
-
-            }
-
         }
     }
 
@@ -876,10 +853,6 @@ footer {
         width: 100%;
         height: auto;
         z-index: -1;
-
-        @media screen and (max-width:768px) {
-            height: 500px;
-        }
     }
 
     .footer__left {
