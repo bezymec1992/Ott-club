@@ -466,6 +466,7 @@ a {
 }
 .tv .tv__wrapper .tv__btns {
   overflow: auto;
+  overflow-x: hidden;
   gap: 22px;
 }
 .tv .tv__wrapper .tv__btn {

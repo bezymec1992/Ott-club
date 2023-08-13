@@ -1,32 +1,10 @@
 AOS.init();
 
-const swiper = new Swiper('.swiper', {
-    loop: false,
-    slidesPerView: 8,
-    mousewheel: {
-        sensitifity: 5,
-    },
-    spaceBetween: 25,
-    effect: 'slide',
-    breakpoints: {
-        320: {
-            slidesPerView: 4,
-            spaceBetween: 16,
-        },
-        990: {
-            slidesPerView: 6,
-            spaceBetween: 26,
-        },
-        1440: {
-            
-            slidesPerView: 8,
-        },
-    },
-    slidesPerColumn: 1,
-    loopeSlides: 1,
-    watchOverflow: true,
-});
-
+if(window.innerWidth <768) {
+    AOS.init({once:true, offset: 0});
+} else {
+    AOS.init({once:true, offset: 120});
+}
 
 const cards = document.querySelectorAll(".tv__img");
 const see = document.querySelector(".see");
