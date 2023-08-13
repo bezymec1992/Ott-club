@@ -85,7 +85,6 @@ a {
 .header__btn:hover {
   color: red;
   border-radius: 5px;
-  padding: 16px 31px;
   border: 1px solid red;
 }
 
@@ -268,6 +267,7 @@ a {
 
 .frame {
   padding-top: 100px;
+  z-index: 11;
 }
 .frame .frame__wrapper {
   position: relative;
@@ -445,6 +445,7 @@ a {
           transform: translateY(-50%);
 }
 .tv .tv-spider img {
+  max-width: 500px;
   width: 100%;
   height: auto;
   z-index: -1;
@@ -581,6 +582,7 @@ a {
   border: 2px solid red;
 }
 .tv .see {
+  position: relative;
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
@@ -888,7 +890,7 @@ footer .footer__left .footer__items li {
   transition: ease 0.5s;
 }
 footer .footer__left .footer__items li:hover {
-  margin-left: 10px;
+  color: red;
 }
 footer .footer__right h3 {
   font-size: 20px;
