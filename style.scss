@@ -495,7 +495,6 @@ a {
 
         .tv__btns {
             overflow: auto;
-            overflow-x:hidden;
             gap: 22px;
             position: relative;
         }
@@ -512,14 +511,16 @@ a {
             @media screen and (max-width:768px) {
                 font-size: 16px;
                 padding: 8px 16px;
-
-
             }
 
             &:hover {
-                border: 2px solid #FC3232;
-                background: #FC3232;
+                border: 2px solid #4b0909;
+                background: #4b0909;
             }
+        }
+        .active {
+            background: red;
+            border: 2px solid red;
         }
 
         .tv__cards {
@@ -528,6 +529,9 @@ a {
             gap: 70px;
             display: grid;
             grid-template-columns: auto auto auto auto auto;
+            @media screen and (max-width: 1440px) {
+                gap: 50px;
+            }
 
             @media screen and (max-width:992px) {
                 gap: 40px;
