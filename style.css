@@ -502,6 +502,7 @@ a {
   overflow: auto;
   gap: 22px;
   position: relative;
+  margin-right: -16px;
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;

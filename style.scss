@@ -509,7 +509,7 @@ a {
             overflow: auto;
             gap: 22px;
             position: relative;
-
+            margin-right: -16px;
             &::-webkit-scrollbar {
                 //Hide scrollbar for Chrome, Safari and Opera
                 display: none;
