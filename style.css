@@ -2,19 +2,6 @@ body {
   background-color: #131212;
 }
 
-.main {
-  background: url("img/bg1.jpg") no-repeat center center/cover;
-  height: 1120px;
-  position: relative;
-  padding-top: 30px;
-  z-index: 11;
-}
-@media screen and (max-width: 1440px) {
-  .main {
-    height: calc(100% - 100px);
-  }
-}
-
 .container {
   max-width: 1476px;
   width: 100%;
@@ -24,6 +11,7 @@ body {
 
 .header {
   margin-bottom: 80px;
+  padding-top: 30px;
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -43,22 +31,6 @@ body {
   .header .enter-btn {
     font-size: 16px;
     padding: 9px 24px;
-  }
-}
-
-.bats {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: url("img/bg-bats.png") no-repeat center center/cover;
-  height: 500px;
-  width: 100%;
-  z-index: -1;
-  margin-bottom: -2px;
-}
-@media screen and (max-width: 768px) {
-  .bats {
-    height: 340px;
   }
 }
 
@@ -106,9 +78,32 @@ a {
   }
 }
 
+.bg-article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+}
+@media screen and (max-width: 768px) {
+  .bg-article {
+    height: 400px;
+  }
+}
+.bg-article img {
+  width: 100%;
+  height: auto;
+}
+
 .article {
   position: relative;
   overflow: hidden;
+  background: url("img/bg-bats.png") no-repeat center bottom/cover;
+}
+@media screen and (max-width: 540px) {
+  .article {
+    padding-bottom: 0px;
+  }
 }
 .article .article__img {
   max-width: 930px;
